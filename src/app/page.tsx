@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { books } from "@/data/book";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <section className="hero">
+        <Header/>
         <div>
           <p className="eyebrow">ONLINE BOOK STORE</p>
           <h1>Learn. Build. Create.</h1>
@@ -27,6 +30,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
